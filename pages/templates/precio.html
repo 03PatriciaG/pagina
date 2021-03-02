@@ -1,0 +1,184 @@
+{% extends 'base.html' %}
+{% block content %}
+<html>
+<head>
+  <title>Changing Styles</title>
+</head>
+<body>
+<style>
+	.bt1{padding: 6px;}
+	.bt2{padding: 6px;border-radius: 10px;}
+	.bt3{padding: 6px;border-radius: 50%;}
+	.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+.modalDialog > div {
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+  -webkit-transition: opacity 400ms ease-in;
+-moz-transition: opacity 400ms ease-in;
+transition: opacity 400ms ease-in;
+}
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+.close:hover { background: #00d9ff; }
+</style>
+
+
+<table cellspacing="1" cellpadding="0" border="0" bgcolor="black" id="shell" height="250" width="1000" align="center">
+	<tr height="50">
+		<td colspan="2" bgcolor="black"> 
+		
+			<table title="Banner" id="banner" border="0" align="center"> 
+				<tr>
+					
+					<center>
+						<h1 style="color:indianred">Sobre Changing Styles ...</h1>
+						<img src="https://th.bing.com/th/id/OIP.bhThL2YD0kMCjD2kkoq5lAAAAA?w=140&h=150&c=7&o=5&pid=1.7" class="center">
+					</center>
+					
+				</tr> 
+			</table>
+		
+		</td>
+	</tr>
+	<tr height="200">
+		<td bgcolor="black"> 
+		
+			<table id="navigation" title="Navigation" border="0">
+
+				<button>
+				<center>
+					<a href="#openModal">Cortes de Cabello </a>
+
+					<div id="openModal" class="modalDialog">
+						<div>
+							<a href="#close" title="Close" class="close">X</a>
+							<h2>Precios de corte de cabello</h2>
+							<p>Corte Escolar.....$50</p>
+							<p>Corte Caballero...$80</p>
+							<p>Corte con navaja..$100</p>
+							<p>Corte de mujer...$50</p>
+
+							
+						</div>
+					</div>
+									
+					<img src="https://th.bing.com/th/id/OIP.FX5HHSWreM7a8OpBvPOfPwAAAA?w=142&h=150&c=7&o=5&pid=1.7">
+				</center>	
+					
+				</button>	
+
+				<button>
+					<center>
+						
+						<a href="#openModal2">Tintes y Manicure </a>
+
+					<div id="openModal2" class="modalDialog">
+						<div>
+							<a href="#close" title="Close" class="close">X</a>
+							<h2>Tintes y Manicure</h2>
+							<p>Tintes c/u.....$50</p>
+							<p>Manicure...$200</p>
+							<p>Baño de color..$250</p>
+														
+						</div>
+					</div>
+								
+						
+						<img src="https://th.bing.com/th/id/OIP.tp_ySLuET4kdKNxjqMK1fgAAAA?w=150&h=150&c=7&o=5&pid=1.7">
+					</center>	
+						
+					</button>	
+					<button>
+						<center>
+							<a href="#openModal3">Uñas </a>
+
+					<div id="openModal3" class="modalDialog">
+						<div>
+							<a href="#close" title="Close" class="close">X</a>
+							<h2>Uñas</h2>
+							<p>Uñas chicas.....$150</p>
+							<p>Uñas medianas...$300</p>
+							<p>Uñas grandes....$500 en adelante</p>
+							<p>Gelish..........$100</p>
+														
+						</div>
+					</div>
+							<img src="https://th.bing.com/th/id/OIP.hX1n9FPgGFt4NFZj-0SYcAAAAA?w=141&h=150&c=7&o=5&pid=1.7">
+							
+						</center>	
+							
+					</button>	
+					<button>
+						<center>
+							
+							<a href="#openModal4">Peinados </a>
+
+					<div id="openModal4" class="modalDialog">
+						<div>
+							<a href="#close" title="Close" class="close">X</a>
+							<h2>Peinados</h2>
+							<p>Ondas.....$150</p>
+							<p>Peinado sencillo......$200</p>
+							<p>Peinado de novia......$350</p>
+							<p>Peinado de graduacion.$400 con maquillaje</p>
+														
+						</div>
+					</div>
+							
+							<img src="https://th.bing.com/th/id/OIP.lAAo6fyPwLIPYv93rRqU7gAAAA?w=142&h=150&c=7&o=5&pid=1.7">
+						</center>	
+							
+					</button>		
+					
+
+			</table> 
+			
+		</td>
+		
+	</tr>
+</table>
+
+</body>
+</html>
+{% endblock content %}
